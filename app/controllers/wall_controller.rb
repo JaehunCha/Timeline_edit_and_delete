@@ -5,7 +5,7 @@ class WallController < ApplicationController
   def write_complete
     p = Post.new
     p.name = params[:writer]
-    p.conten = params[:content]
+    p.content = params[:content]
     if p.save
       redirect_to "/wall/posts"
     else
